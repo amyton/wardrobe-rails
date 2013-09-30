@@ -11,11 +11,11 @@ describe WardrobeItemsController do
   end
   
   describe "GET show" do
-    it "displays information about a single WardrobeItem as @item" do
+    it "displays information about a single WardrobeItem as @wardrobe_item" do
       wardrobe_item = WardrobeItem.create
       get :show, { :id => wardrobe_item }
 
-      exepct(assigns('wardrobe_itemgit co')).to eq(wardrobe_item)
+      expect(assigns('wardrobe_item')).to eq(wardrobe_item)
     end
   end
 end

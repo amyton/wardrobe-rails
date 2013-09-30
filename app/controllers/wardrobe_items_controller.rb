@@ -4,6 +4,6 @@ class WardrobeItemsController < ApplicationController
   end
 
   def show
-      @wardrobe_item = WardrobeItem.find_by_id(params[:id])
+    @wardrobe_item = WardrobeItem.find_by_id(params[:id])
   end
 end
